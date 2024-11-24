@@ -1,0 +1,50 @@
+body{
+    background-color: #050210;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.krug{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #fb5dad, #55fb9f, #b97aff);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotacija 1s linear infinite;
+    box-shadow: 0 0 30px 15px rgba(251, 93, 173, 0.3), 
+                0 0 40px 25px rgba(85, 251, 159, 0.3), 
+                0 0 50px 35px rgba(185, 122, 255, 0.3);
+}
+
+
+.krug1{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #050210;
+    position: absolute;
+    top: 27px; 
+    left: 27px;
+    z-index: 1
+}
+
+@keyframes rotacija {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
